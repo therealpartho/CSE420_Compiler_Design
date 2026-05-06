@@ -1,0 +1,148 @@
+Line no 1: Token <INT> Lexeme int found
+
+Line no 1: Token <ID> Lexeme x found
+
+Line no 1: Token <COMMA> Lexeme , found
+
+Line no 1: Token <ID> Lexeme y found
+
+Line no 1: Token <COMMA> Lexeme , found
+
+Line no 1: Token <ID> Lexeme z found
+
+Line no 1: Token <SEMICOLON> Lexeme ; found
+
+At line no: 1 var_declaration : type_specifier declaration_list SEMICOLON 
+
+int x,y,z;
+
+At line no: 1 program : unit 
+
+int x,y,z;
+
+Line no 1: Token <FLOAT> Lexeme float found
+
+Line no 1: Token <ID> Lexeme a found
+
+Line no 1: Token <SEMICOLON> Lexeme ; found
+
+At line no: 1 var_declaration : type_specifier declaration_list SEMICOLON 
+
+float a;
+
+At line no: 1 program : program unit 
+
+int x,y,z;
+float a;
+
+Line no 3: Token <INT> Lexeme int found
+
+Line no 3: Token <ID> Lexeme var found
+
+Line no 3: Token <INT> Lexeme int found
+
+Line no 3: Token <ID> Lexeme a found
+
+Line no 3: Token <COMMA> Lexeme , found
+
+Line no 3: Token <INT> Lexeme int found
+
+Line no 3: Token <ID> Lexeme b found
+
+Line no 4: Token <RETURN> Lexeme return found
+
+Line no 4: Token <ID> Lexeme a found
+
+Line no 4: Token <ADDOP> Lexeme + found
+
+Line no 4: Token <ID> Lexeme b found
+
+Line no 4: Token <SEMICOLON> Lexeme ; found
+
+At line no: 4 statement : RETURN expression SEMICOLON 
+
+At line no: 5 compound_statement : LCURL statements RCURL 
+
+{
+return a+b;
+}
+
+At line no: 5 func_definition : type_specifier ID LPAREN parameter_list RPAREN compound_statement 
+
+int var(int a,int b)
+{
+return a+b;
+}
+
+At line no: 5 program : program unit 
+
+int x,y,z;
+float a;
+int var(int a,int b)
+{
+return a+b;
+}
+
+Line no 7: Token <VOID> Lexeme void found
+
+Line no 7: Token <ID> Lexeme foo found
+
+Line no 8: Token <ID> Lexeme x found
+
+Line no 8: Token <ASSIGNOP> Lexeme = found
+
+Line no 8: Token <CONST_INT> Lexeme 2 found
+
+Line no 8: Token <SEMICOLON> Lexeme ; found
+
+Line no 9: Token <ID> Lexeme y found
+
+Line no 9: Token <ASSIGNOP> Lexeme = found
+
+Line no 9: Token <ID> Lexeme x found
+
+Line no 9: Token <ADDOP> Lexeme - found
+
+Line no 9: Token <CONST_INT> Lexeme 5 found
+
+Line no 9: Token <SEMICOLON> Lexeme ; found
+
+At line no: 10 compound_statement : LCURL statements RCURL 
+
+{
+x=2;
+y=x-5;
+}
+
+At line no: 10 func_definition : type_specifier ID LPAREN RPAREN compound_statement 
+
+void foo()
+{
+x=2;
+y=x-5;
+}
+
+At line no: 10 program : program unit 
+
+int x,y,z;
+float a;
+int var(int a,int b)
+{
+return a+b;
+}
+void foo()
+{
+x=2;
+y=x-5;
+}
+
+Line no 12: Token <INT> Lexeme int found
+
+Line no 12: Token <ID> Lexeme main found
+
+Line no 13: Token <INT> Lexeme int found
+
+Line no 13: Token <ID> Lexeme a found
+
+Error at line 13: syntax error
+Total lines: 13

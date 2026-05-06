@@ -1,0 +1,182 @@
+Line no 1: Token <INT> Lexeme int found
+
+Line no 1: Token <ID> Lexeme bar found
+
+Line no 1: Token <INT> Lexeme int found
+
+Line no 1: Token <ID> Lexeme a found
+
+Line no 3: Token <RETURN> Lexeme return found
+
+Line no 3: Token <ID> Lexeme a found
+
+Line no 3: Token <SEMICOLON> Lexeme ; found
+
+At line no: 3 statement : RETURN expression SEMICOLON 
+
+At line no: 4 compound_statement : LCURL statements RCURL 
+
+{
+return a;
+}
+
+At line no: 4 func_definition : type_specifier ID LPAREN parameter_list RPAREN compound_statement 
+
+int bar(int a)
+{
+return a;
+}
+
+At line no: 4 program : unit 
+
+int bar(int a)
+{
+return a;
+}
+
+Line no 6: Token <INT> Lexeme int found
+
+Line no 6: Token <ID> Lexeme main found
+
+Line no 8: Token <ID> Lexeme a found
+
+Line no 8: Token <ASSIGNOP> Lexeme = found
+
+Line no 8: Token <CONST_INT> Lexeme 56 found
+
+Line no 8: Token <SEMICOLON> Lexeme ; found
+
+Line no 9: Token <IF> Lexeme if found
+
+Line no 9: Token <ID> Lexeme a found
+
+Line no 9: Token <MULOP> Lexeme % found
+
+Line no 9: Token <CONST_INT> Lexeme 2 found
+
+Line no 9: Token <RELOP> Lexeme == found
+
+Line no 9: Token <CONST_INT> Lexeme 0 found
+
+Line no 11: Token <ID> Lexeme printf found
+
+Line no 11: Token <ID> Lexeme a found
+
+Line no 11: Token <SEMICOLON> Lexeme ; found
+
+At line no: 12 compound_statement : LCURL statements RCURL 
+
+{
+printf(a);
+}
+
+Line no 13: Token <ELSE> Lexeme else found
+
+Line no 13: Token <IF> Lexeme if found
+
+Line no 13: Token <ID> Lexeme a found
+
+Line no 13: Token <MULOP> Lexeme % found
+
+Line no 13: Token <CONST_INT> Lexeme 2 found
+
+Line no 13: Token <RELOP> Lexeme == found
+
+Line no 13: Token <CONST_INT> Lexeme 1 found
+
+Line no 15: Token <ID> Lexeme printf found
+
+Line no 15: Token <ID> Lexeme a found
+
+Line no 15: Token <SEMICOLON> Lexeme ; found
+
+At line no: 16 compound_statement : LCURL statements RCURL 
+
+{
+printf(a);
+}
+
+Line no 17: Token <ELSE> Lexeme else found
+
+Line no 19: Token <ID> Lexeme printf found
+
+Line no 19: Token <ID> Lexeme a found
+
+Line no 19: Token <SEMICOLON> Lexeme ; found
+
+At line no: 20 compound_statement : LCURL statements RCURL 
+
+{
+printf(a);
+}
+
+At line no: 20 statement : IF LPAREN expression RPAREN statement ELSE statement 
+
+At line no: 20 statement : IF LPAREN expression RPAREN statement ELSE statement 
+
+At line no: 21 compound_statement : LCURL statements RCURL 
+
+{
+a=56;
+if(a%2==0)
+{
+printf(a);
+}
+else
+if(a%2==1)
+{
+printf(a);
+}
+else
+{
+printf(a);
+}
+}
+
+At line no: 21 func_definition : type_specifier ID LPAREN RPAREN compound_statement 
+
+int main()
+{
+a=56;
+if(a%2==0)
+{
+printf(a);
+}
+else
+if(a%2==1)
+{
+printf(a);
+}
+else
+{
+printf(a);
+}
+}
+
+At line no: 21 program : program unit 
+
+int bar(int a)
+{
+return a;
+}
+int main()
+{
+a=56;
+if(a%2==0)
+{
+printf(a);
+}
+else
+if(a%2==1)
+{
+printf(a);
+}
+else
+{
+printf(a);
+}
+}
+
+At line no: 21 start : program 
+
+Total lines: 21
